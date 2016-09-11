@@ -1,0 +1,5 @@
+postlab1.question.txt
+Patrick Anderson psa5dg
+1/29/16
+
+Why does the method “void push(T item)” not utilize pointers? “T* push_head()” does a very similar process, but it uses pointers. Why is there a difference?

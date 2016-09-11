@@ -1,0 +1,5 @@
+difficulties.txt
+Patrick Anderson psa5dg
+2/9/16
+
+I did not run into many difficulties in this lab at all. Everything made sense to me, and the times that my code did not compile, I was able to quickly point out and resolve the solution. The trickiest part of the lab was the user input part. I had to differentiate integers from non-integers, and non-integers from operators. I carefully read through the hints I was given, and did what they suggested me to do. I looked up what some of the methods I was using did specifically, and this gave me helpful information for how to utilize them correctly, especially the character array. For my stack, I looked at the lecture notes and saw that we were given an implementation suggestion already, so I used that and modeled it after my List classes. The weirdest part for me was that I didn’t have anything in my calculator constructor. Regardless, my code works.

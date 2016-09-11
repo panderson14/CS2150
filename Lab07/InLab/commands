@@ -1,0 +1,92 @@
+3 load accumulator
+4 store accumulator
+5 a + mem[addr]
+6 a - mem[addr]
+7
+8
+9
+A
+B
+C go to address
+D if a = 0 go to address
+E if a < 0 go to address
+
+
+int size = 5;
+int one = 1;
+int zero = 0;
+int four = 4;
+int baseAddress = 0030;
+int counterI = 0;
+int counterJ = 4;
+int storer = 4000;
+int loader = 3000;
+int subtractor = 6000;
+temp = 0000;
+
+
+loop begins
+
+load loader;
+add baseAddress;
+add j;
+store into loadIt1;
+
+load storer;
+add baseAddress;
+add j;
+store into storeIt1;
+
+load subtractor;
+add baseAdress;
+add j;
+subtract 1;
+store into subtractIt;
+
+load loader;
+add baseAddress;
+add j;
+subtract 1;
+store into loadIt2;
+
+load storer;
+add baseAdd;
+add j;
+subtract 1;
+store to storeIt2;
+
+loadIt1;
+subtractIt;
+if a < 0 go to special place;
+special place ends;
+
+load j;
+subtract 1;
+subtract i;
+if a = 0 skip ahead;
+load j;
+subtract 1;
+store j;
+begin loop again;
+
+load 4;
+store in j;
+load i;
+add 1;
+subtract max;
+if a = 0 skip ahead;
+load i;
+add 1;
+store i;
+begin loop;
+
+end program;
+
+
+loadit1;
+store in temp;
+loadit2;
+storeIt;
+load temp;
+storeIt2;
+go back to loop;

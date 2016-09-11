@@ -1,0 +1,26 @@
+C008	00	skip variables down to 08
+0000	01	first
+0000	02	second
+0000	03	third
+0000	04	
+0000	05	extra space 04-07
+0000	06
+0000	07	
+1000	08	loop begins, read first variable
+4001	09	store first variable
+1000	0A	read second variable
+4002	0B	store second variable
+1000	0C	read third variable
+4003	0D	store third variable
+3001	0E	load first variable
+5002	0F	add second variable
+5003	10	add third variable
+D013	11	if a=0, jump to 13
+C008	12	else jump to loop
+3001	13	load first
+1800	14	print first
+3002	15	load second
+1800	16	print second
+3003	17	load third
+1800	18	print third
+0000	19	halt

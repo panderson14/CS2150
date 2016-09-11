@@ -1,0 +1,75 @@
+C010	00	go to start
+0000	01	zero
+0001	02	one
+0004	03	four
+0005	04	size
+0000	05	i
+0004	06	j
+0046	07	baseAddress
+0000	08	temp
+3000	09	loader
+4000	0A	storer
+6000	0B	subtractor
+0000	0C
+0000	0D
+0000	0E
+0000	0F
+3009	10	loop begins, load loader
+5007	11	add baseAddress
+5006	12	add j
+4028	13	store into loadIt1
+403F	14	store into loadIt1
+300A	15	load storer
+5007	16	add baseAddress
+5006	17	add j
+4042	18	store into storeIt1
+300B	19	load subtractor
+5007	1A	add baseAddress
+5006	1B	add j
+6002	1C	subtract 1
+4029	1D	store into subtractIt
+3009	1E	load loader
+5007	1F	add baseAdress
+5006	20	add j
+6002	21	subtract 1
+4041	22	store into loadIt2
+300A	23	load storer
+5007	24	add baseAddress
+5006	25	add j
+6002	26	subtract 1
+4044	27	store into storeIt2
+0000	28	loadIt1		
+0000	29	subtractIt	
+E03F	2A	jmpe
+3006	2B	rejump, load j
+6002	2C	subtract 1
+6005	2D	subtract i
+D033	2E	jumpd
+3006	2F	load j
+6002	30	subtract 1
+4006	31	store j
+C010	32	go to beginning of loop
+3003	33	rejump, load 4
+4006	34	store into j
+3005	35	load i
+5002	36	add 1
+6005	37	subtract size
+D03D	38	jumpd
+3005	39	load i
+5002	3A	add 1
+4005	3B	store i
+C010	3C	go to beginning of loop
+0000	3D	rejump, end program
+0000	3E
+0000	3F	loadIt1		
+4008	40	store in temp
+0000	41	loadIt2		
+0000	42	storeIt		
+3008	43	load temp
+0000	44	storeIt2	
+C02B	45	go back to nest
+000A	46
+0002	47
+0001	48
+0003	49
+0009	4A

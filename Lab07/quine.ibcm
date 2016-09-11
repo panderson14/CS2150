@@ -1,0 +1,26 @@
+C006	00	Skip past the variables
+0001	01	1
+0000	02	i = 0
+0003	03	3
+3000	04	loader
+001B	05	totalLines (a little extra, what to compare i to)
+3004	06	loop begins, load loader
+5002	07	add i
+4012	08	store in doit
+3002	09	load i
+5001	0A	add 1
+4002	0B	store in i
+3002	0C	load i
+6005	0D	subtract totalLines
+D015	0E	if a = 0 skip to end of the program
+3002	0F	load i
+6003	10	subtract 3
+D016	11	if a = 0 skip to special
+0000	12	doit
+1800	13	print accumulator
+C006	14	jump to beginning of the loop
+0000	15	halt, program ends
+3019	16	special, load 0000
+1800	17	print accumulator
+C006	18	jump to beginning of loop
+0000	19	0

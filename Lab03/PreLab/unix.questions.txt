@@ -1,0 +1,5 @@
+unix.questions.txt
+Patrick Anderson psa5dg
+2/7/16
+
+Sometimes, when I am running an executable and forget that it is running, I will use the arrow keys, resulting in some weird characters showing up on the screen. Are these symbols the symbols for representing arrow keys, and can I somehow use these symbols in a program for if I want an arrow key user input?
